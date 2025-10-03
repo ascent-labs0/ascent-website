@@ -1,0 +1,97 @@
+.formation {
+  background: #1a1a1a;
+  padding: 80px 0;
+}
+
+.section-header {
+  margin-bottom: 4rem;
+}
+
+.formation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.formation-card {
+  background: #2a2a2a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.formation-card:hover {
+  border-color: #87CEEB;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 212, 170, 0.1);
+}
+
+.formation-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.formation-content {
+  flex: 1;
+}
+
+.formation-title {
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.formation-provider {
+  color: #b0b0b0;
+  font-size: 0.9rem;
+  margin-bottom: 2px;
+}
+
+.formation-duration {
+  color: #888;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .formation-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .formation-card {
+    padding: 15px;
+  }
+
+  .formation-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .formation-title {
+    font-size: 0.9rem;
+  }
+
+  .formation-provider {
+    font-size: 0.8rem;
+  }
+
+  .formation-duration {
+    font-size: 0.75rem;
+  }
+}
