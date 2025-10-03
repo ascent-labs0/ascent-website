@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascent Labs - Test Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #00d4aa 0%, #00b894 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero p {
+            font-size: 1.5rem;
+            color: #b0b0b0;
+            margin-bottom: 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #00d4aa;
+            color: #1a1a1a;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #00b894;
+            transform: translateY(-2px);
+        }
+        
+        .status {
+            background: #2a2a2a;
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .status h2 {
+            color: #00d4aa;
+            margin-bottom: 1rem;
+        }
+        
+        .status p {
+            color: #b0b0b0;
+            margin-bottom: 0.5rem;
+        }
+        
+        .success {
+            color: #00d4aa;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="container">
+            <h1>Ascent Labs</h1>
+            <p>Web & App Development Company</p>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="status">
+            <h2>✅ Website Status</h2>
+            <p class="success">Your Ascent Labs website is working perfectly!</p>
+            <p>This is a test page to verify that your development environment is set up correctly.</p>
+            <p>The full React application is built and ready to view.</p>
+        </div>
+        
+        <div class="status">
+            <h2>🚀 How to View Your Full Website</h2>
+            <p><strong>Option 1:</strong> Open the built files directly</p>
+            <p>Navigate to: <code>/Users/mabelenglish/Desktop/dev/avision-studios/dist/index.html</code></p>
+            <p><strong>Option 2:</strong> Use a local server</p>
+            <p>Run: <code>cd /Users/mabelenglish/Desktop/dev/avision-studios/dist && python3 -m http.server 3000</code></p>
+            <p>Then visit: <code>http://localhost:3000</code></p>
+        </div>
+    </div>
+</body>
+</html>
